@@ -1,0 +1,163 @@
+:root{
+    --cor-categoria: #EB9B00;
+    --azul-degrade:linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --font-titulos:'Poppins', sans-serif;
+    --cor-fundo-: #FFFFFF;
+    --cor-fundo-cinza: #C4C4C4;
+    --cor-categoria: #EB9B00;
+    --cor-azul: #002F52;
+
+}
+
+.carrossel__titulo {
+color: var(--cor-categoria);
+text-align: center;
+font-family: var(--font-titulos);
+font-size: 1.125rem;
+font-weight: 700;
+padding: 1.25rem;
+}
+
+.swiper-slide img {
+width: 100%;
+}
+
+.swiper-button-prev , .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+}
+.descrição__titulo {
+    font-size: 1rem;
+    color: var(--cor-categoria);
+    font-weight: 700;
+    font-family: var(--font-titulos);
+}
+
+.descrição__subtitulo {
+    font-size: 1.125rem;
+    color: var(--cor-azul);
+    font-weight: 700;
+    font-family: var(--font-titulos);
+    padding: 0.563rem 0;
+}
+
+.descrição__paragrafo {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: var(--font-titulos);
+    
+}
+
+
+
+
+.card {
+border-radius: 10px;
+background: var(--cor-fundo-);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+align-items: center;
+margin: 1em;
+padding: 1em;
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.imagem__card {
+padding-left: 1em;
+}
+
+.card_botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    
+}
+
+.botao__saibamais {
+    background-color: var(--cor-categoria);
+    color: var(--cor-fundo-);
+    text-decoration: none;
+    padding: 1em 2.2em;
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    font-size: 1rem;
+  
+    
+}
+
+.botoes__item {
+    margin: 0 0.5em;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: 1.625rem;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-button-prev , .swiper-button-next {
+        display: block;
+    }
+
+    .card {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 3.844rem;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel__titulo {
+        font-size: 2rem;
+    }
+
+    .carrosel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .card {
+        padding-top: 2rem;
+        width: 70%;
+        margin-left: 1em;
+        
+    }
+
+    .descrição__titulo {
+        font-size: 2rem;
+    }
+
+    .descrição__paragrafo {
+        font-size: 1rem;
+    }
+
+
+}
+    

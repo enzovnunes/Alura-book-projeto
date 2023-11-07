@@ -1,0 +1,83 @@
+:root{
+    --cor-categoria: #EB9B00;
+    --azul-degrade:linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --font-titulos:'Poppins', sans-serif;
+    --cor-fundo-: #FFFFFF;
+    --cor-fundo-cinza: #C4C4C4;
+    --cor-categoria: #EB9B00;
+    --cor-azul: #002F52;
+
+}
+
+.topicos {
+    background-color: var(--cor-azul);
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+.topico__titulo {
+    color: var(--cor-fundo-);
+    font-family: var(--font-titulos);
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 2em;
+}
+
+ .topicos_lista {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ .topico__item {
+    margin: 2em 0.5em;
+    font-size: 1rem;
+ }
+
+ .topico_link {
+    text-decoration: none;
+    color: var(--cor-fundo-);
+    padding: 1em;
+    font-family: var(--cor-fundo-);
+    font-weight: 700;
+    font-size: 0.875rem;
+    background-color: var(--cor-categoria);
+ }
+
+ @media screen and (min-width: 1024px){
+    .topicos {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .topico_link {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+
+ }
+
+ @media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 30vw;
+    
+    }
+
+    .topico__titulo {
+        font-size: 2rem;
+    }
+
+    .topico_link {
+        font-size: 1.5rem;
+    }
+
+    
+ }
+
+ 
+ 
+
+        

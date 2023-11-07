@@ -1,0 +1,77 @@
+:root {
+    --cor-categoria: #EB9B00;
+    --azul-degrade:linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --font-titulos:'Poppins', sans-serif;
+    --cor-fundo-: #FFFFFF;
+    --cor-fundo-cinza: #C4C4C4;
+    --cor-categoria: #EB9B00;
+    }
+
+    .hr {
+        margin: 0;
+    }
+
+.footer {
+    background-color: var(--cor-fundo-);
+    padding: 1em;
+}
+
+.footer__titulo {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-titulos);
+}
+
+.rodapé_lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodapé_lista {
+        display: block;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .rodapé_lista_titulo {
+        color: #858585;
+        font-family: var(--font-titulos);
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .rodapé_lista_link {
+        text-decoration: none;
+        color: #474646;
+        font-size: 0.875rem;
+        font-family: var(--font-titulos);
+        font-weight: 400;
+        margin-left: 1em;
+    }
+
+    .rodapé_lista_item {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .footer__titulo {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .rodapé_lista {
+        border-left: 1px solid #858585;
+        padding: 1em;
+    }
+
+    .footer {
+        padding: 3em 0;
+    }
+}
